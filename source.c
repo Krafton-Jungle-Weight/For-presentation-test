@@ -65,7 +65,7 @@ static inline void fill_dummy_posts(DummyPost posts[], int count) {
         strncpy(posts[i].author, SAMPLE_AUTHORS[a], MAX_AUTHOR_LEN - 1);
         strncpy(posts[i].content, SAMPLE_CONTENTS[c], MAX_CONTENT_LEN - 1);
         
-        time_t now = time(NULL) - rand() % (60*60*24*301);
+        time_t now = time(NULL) - rand() % (60*60*24*30);
         struct tm tm_info;
         localtime_r(&now, &tm_info);
         strftime(posts[i].created_at, sizeof(posts[i].created_at), "%Y-%m-%d %H:%M:%S", &tm_info);
