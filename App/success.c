@@ -1,2 +1,2 @@
 #include <stdio.h>
-int main( ) { int x ; if (x = 5) { printf(\"%d\\n\", x ) ; } }
+int main( ) { int x ; if (x = 5) { printf(\"%d\\n\", x ) ; } 1}
