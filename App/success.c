@@ -1,2 +1,10 @@
 #include <stdio.h>
-int main( ) { int x ; if (x = 5) { printf(\"%d\\n\", x ) ; } }
+
+int main(void) {
+  for (int i = 0; i < 10; i++) {
+    if (i == 5) {
+      printf("i is 5\\n");
+    }
+  }
+  return 0;
+}
